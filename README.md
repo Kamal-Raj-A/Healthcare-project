@@ -1,17 +1,17 @@
 # Healthcare-project
-🔹 1. Open your project folder
+## 1. Open your project folder
 
 Make sure all files are in place:
 
-app.py (Flask backend)
+* app.py (Flask backend)
 
-model.pkl (trained ML model)
+* model.pkl (trained ML model)
 
-templates/ (HTML files)
+* templates/ (HTML files)
 
-static/ (CSS, JS, images)
+* static/ (CSS, JS, images)
 
-Dataset files (CSV or Excel, if needed)
+* Dataset files (CSV or Excel, if needed)
 
 🔹 2. Create and activate virtual environment (optional but recommended)
 python -m venv venv
@@ -28,12 +28,10 @@ pip install flask scikit-learn numpy pandas matplotlib
 (If you used extra libraries, also install them: pip install joblib seaborn etc.)
 
 🔹 4. Run your Flask app
+<img width="1919" height="979" alt="image" src="https://github.com/user-attachments/assets/1990b535-15af-4201-a689-42b19fe7c578" />
 
-In the terminal, run:
 
-python app.py
-
-🔹 5. Open in browser
+## 5. Open in browser
 
 After running, you’ll see something like:
 
