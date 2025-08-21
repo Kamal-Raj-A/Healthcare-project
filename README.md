@@ -1,4 +1,4 @@
-# Healthcare-project
+# Healthcare Prediction project
 ## 1. Open your project folder
 
 Make sure all files are in place:
