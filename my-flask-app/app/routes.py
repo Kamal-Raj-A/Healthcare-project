@@ -4,7 +4,7 @@ import pandas as pd
 import pickle
 import os
 
-main = Blueprint('main', __name__)
+bp = Blueprint('main', __name__)
 
 base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 
@@ -47,11 +47,11 @@ def get_predicted_value(patient_symptoms):
         input_vector[symptoms_dict[item]] = 1
     return diseases_list[svc.predict([input_vector])[0]]
 
-@main.route('/')
+@bp.route('/')
 def home():
     return render_template('index.html')
 
-@main.route('/predict', methods=['GET', 'POST'])
+@bp.route('/predict', methods=['GET', 'POST'])
 def predict():
     if request.method == 'POST':
         symptoms = request.form.get('symptoms')
@@ -75,22 +75,22 @@ def predict():
 
     return render_template('index.html')
 
-@main.route('/about')
+@bp.route('/about')
 def about():
     return render_template('about.html')
 
-@main.route('/contact')
+@bp.route('/contact')
 def contact():
     return render_template('contact.html')
 
-@main.route('/developer')
+@bp.route('/developer')
 def developer():
     return render_template('developer.html')
 
-@main.route('/blog')
+@bp.route('/blog')
 def blog():
     return render_template('blog.html')
 
-@main.route('/img.png')
+@bp.route('/img.png')
 def favicon():
-    return send_from_directory(os.path.join(main.root_path, 'static'), 'img.png', mimetype='image/png')
+    return send_from_directory(os.path.join(bp.root_path, 'static'), 'img.png', mimetype='image/png')
