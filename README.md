@@ -38,10 +38,11 @@ After running, you’ll see something like:
  * Running on http://127.0.0.1:5000/
  Open this URL in your browser.
 Your healthcare prediction web app will load.
+<img width="1919" height="969" alt="image" src="https://github.com/user-attachments/assets/dc649751-8f16-4898-b0c2-4f1a6a6d8f6e" />
 
 ## 6. Testing
-Enter symptoms or required input.
-
+Enter symptoms as per the data you used.
+eg: shivering, itching, etc,...
 Click Predict.
 
 The model will use model.pkl and return the predicted disease with precautions/diet/medication details.
